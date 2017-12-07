@@ -80,7 +80,7 @@ class Button
         monitor.display();
         break;
         case 'R' :
-        // monitor.tracker();
+        // radar 2 active
         break;
         //honing triangles
         case 'T':
@@ -88,6 +88,10 @@ class Button
          PVector bp = new PVector(width-330, 2*height/4.); //PVector.add(pos, PVector.mult(forward, size + 2));
          Bullet b = new Bullet(bp.x, bp.y, 15 * 2);
          bullets.add(b);
+         
+         PVector bd = new PVector(width/3.2, 2*height/4.);
+         Bullet bb = new Bullet(bd.x, bd.y, 15 * 2);
+         bullets2.add(bb);
         //case 'B':
         //???
       }

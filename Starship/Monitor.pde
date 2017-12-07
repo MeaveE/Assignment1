@@ -43,20 +43,5 @@ class Monitor
     println(tline);
     triangle(190+tline,60,210+tline,90,230+tline,60);
   }
-  void tracker()
-  {
-    stroke(0);
-      int offset = 30;
-      int staredge =90;
-    ellipse(cx,cy, size/2,size/2);
-    //needs new Radar with triangles rather than circles how???
-    
-  //line(450-offset-staredge, cx-offset-staredge, 500-offset, cy-offset);
-  //line(450+offset+staredge, cx+offset+staredge, 500+offset, cy+offset);
-  //line(450+offset+staredge, cx-offset-staredge, 500+offset, cy-offset);
-  //line(450-offset-staredge, cx+offset+staredge, 500-offset, cy+offset);
   
-  
-  }
-
 }

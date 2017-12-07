@@ -26,7 +26,7 @@ void setup()
   buttonT = new Button(820, height-350, 50, 'T', 0);
   buttonB = new Button(820, height-140, 50, 'B', 0);
   radar1 = new Radar(width/4.5, 740, 100, 0.5, color(255, 0, 255), "circle");
-  radar2 = new Radar(width/2, 200, 100, 0.5, color(0, 0, 255), "triangle");
+  radar2 = new Radar(width/2, 280, 100, 0.5, color(0, 0, 255), "triangle");
   flash=new FlashColor();
   bar=new Powerbar(40, 860);
 
@@ -53,6 +53,7 @@ void setup()
 
 float linex, liney;
 ArrayList<Bullet> bullets = new ArrayList<Bullet>();
+ArrayList<Bullet> bullets2 = new ArrayList<Bullet>();
 
 void draw()
 {
@@ -104,6 +105,14 @@ void draw()
     flash.colorchange();
     b.update();
     b.render();
+  }
+  
+  for (int i=bullets2.size()-1; i>=0; i--)
+  {
+    Bullet bb = bullets2.get(i);
+    flash.colorchange();
+    bb.update();
+    bb.render();
   }
 
   bar.render();
