@@ -92,8 +92,9 @@ class Button
          PVector bd = new PVector(width/3.2, 2*height/4.);
          Bullet bb = new Bullet(bd.x, bd.y, 15 * 2);
          bullets2.add(bb);
-        //case 'B':
-        //???
+       // case 'B':
+        
+        //show earth
       }
   
     }

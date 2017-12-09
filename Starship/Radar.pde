@@ -1,5 +1,6 @@
 class Radar
 {
+  PImage img;
   float cx, cy;
   float radius;
   float theta;
@@ -18,6 +19,7 @@ class Radar
     this.theta = 0;
     this.c = c;
     this.shape = shape;
+    img=loadImage("PS_Triangle.png");
   }
   
   void update()
@@ -43,9 +45,12 @@ class Radar
       } else if (shape.equals("triangle")) {
         
         stroke(0, i * greenIntensity, 0);
-        float x = cx + sin(theta + speed) * radius/3; //i *
-        float y = cy -cos(theta +  speed) * radius/3;
-        triangle(cx,cy,x,y-10,x,y+10);
+        float x = cx + sin(theta + speed) * radius/2; //i *
+        float y = cy -cos(theta +  speed) * radius/2;
+        //image(img,x,y,radius/2,radius/2);
+       // ellipse(x, y,radius-5, radius-5);
+        triangle(x,y,(x-radius)-5,(y-radius)-5,(radius-5)+x,(radius-5)+x*0.2);
+        //ellipse(radius-5,radius-5,20,20);
       }
     }
   }

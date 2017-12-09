@@ -103,8 +103,7 @@ void draw()
   {
     Bullet b =bullets.get(i);
     flash.colorchange();
-    b.update();
-    b.render();
+    b.update();    b.render();
   }
   
   for (int i=bullets2.size()-1; i>=0; i--)
@@ -141,6 +140,10 @@ void draw()
   if (mouseX<850 && mouseX>790 && mouseY<800 && mouseY>700)
   {
     animation1.display(xpos-animation1.getWidth()/2, ypos);
+    fill(255);
+    textSize(33);
+    text("Space unicorn Music delivery service",(width/3)+5, 280);
+    text("Click to listen",(width/2.5)+60, 340);
   }
 }
 
