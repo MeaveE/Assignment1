@@ -85,17 +85,23 @@ class Button
         //honing triangles
         case 'T':
         //FIRE!!
-         PVector bp = new PVector(width-330, 2*height/4.); //PVector.add(pos, PVector.mult(forward, size + 2));
+         PVector bp = new PVector(width-330, 2*height/4.); 
          Bullet b = new Bullet(bp.x, bp.y, 15 * 2);
          bullets.add(b);
          
          PVector bd = new PVector(width/3.2, 2*height/4.);
          Bullet bb = new Bullet(bd.x, bd.y, 15 * 2);
          bullets2.add(bb);
-       // case 'B':
+          break;
+          
+         case 'B':
+         textSize(33);
+         fill(255);
+         text("End simulation",(width/3)+5, 280);
+          exit();
         
-        //show earth
       }
+     
   
     }
 

@@ -2,16 +2,12 @@ class Bullet
 {
   PVector pos;
   PVector forward;
-  // float theta;
   float speed;
   
-  Bullet(float x, float y, 
-  //float theta, 
-  float speed)
+  Bullet(float x, float y, float speed)
   {
     pos = new PVector(x, y);
     forward = new PVector(0, -1);
-    //this.theta = theta;
     this.speed = speed;
   }
   
@@ -19,8 +15,7 @@ class Bullet
   {
     pushMatrix();
     translate(pos.x, pos.y);
-    // rotate(theta);
-    line(0, -5, 0, 5);
+    line(0, -2, 0, 2);
     popMatrix();
   }
   
@@ -29,8 +24,6 @@ class Bullet
     
     forward.x = 0;
     forward.y = -1;
-//    forward.x = sin(theta);
-//    forward.y = - cos(theta);
     pos.add(PVector.mult(forward, speed));
   }
 }

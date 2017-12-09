@@ -90,9 +90,8 @@ void draw()
   stroke(random(10, 230), random(10, 50), random(20, 60));
 
   //monitor controls
-  //mouseClicked();
+
   button.render();
-  //button.OnClick();
   buttonR.render();
   buttonT.render();
   buttonB.render();
@@ -253,4 +252,5 @@ void mouseClicked()
   button.OnClick();
   buttonR.OnClick();
   buttonT.OnClick();
+  buttonB.OnClick();
 }
