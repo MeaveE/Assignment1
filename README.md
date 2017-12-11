@@ -31,5 +31,5 @@ it comprises of elements some slightly modified some not so much that we made in
 most proud of are the monitor, the radar, and the music button as I find these were the elements 
 that turned out exactaly as I had wanted them to.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Ham4_P-NDCg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-
+<a href="https://youtu.be/Ham4_P-NDCg" target="_blank"><img src="thumbnail.jpg" 
+alt="Processing Star ship simulation" width="240" height="180" border="10" /></a>
